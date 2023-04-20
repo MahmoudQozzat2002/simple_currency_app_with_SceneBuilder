@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-radius: 50;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SystemScreenController">
+   <children>
+      <HBox prefHeight="98.0" prefWidth="600.0" style="-fx-padding: 10;">
+         <children>
+            <Label prefHeight="80.0" prefWidth="399.0" text="Currency Conversion System" textFill="#190150">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="logOutbtn" mnemonicParsing="false" onAction="#logOutbtnAction" prefHeight="60.0" prefWidth="165.0" style="-fx-background-radius: 20; -fx-background-color: #d67443;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutY="114.0" prefHeight="78.0" prefWidth="600.0" style="-fx-padding: 10;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="304.0" text="USD" textFill="#190150">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="80.0" prefWidth="285.0" text="NIS" textFill="#190150">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="5.0" layoutY="189.0" prefHeight="78.0" prefWidth="600.0" style="-fx-padding: 10;">
+         <children>
+            <TextField fx:id="usdtxt" prefHeight="40.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </TextField>
+            <Label alignment="CENTER" prefHeight="47.0" prefWidth="83.0" text="TO" textFill="#190150">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nistxt" prefHeight="42.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <Button fx:id="convertbtn" layoutX="242.0" layoutY="301.0" mnemonicParsing="false" onAction="#convertbtnAction" style="-fx-background-color: #190150;" text="Convert" textFill="WHITE">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="massage" layoutX="265.0" layoutY="267.0" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="330.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginScreenController">
+   <children>
+      <VBox prefHeight="531.0" prefWidth="330.0" style="-fx-background-color: #efefef;">
+         <children>
+            <ImageView fitHeight="249.0" fitWidth="330.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/login%20iamge.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets left="43.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="userNameTxt" alignment="CENTER" contentDisplay="CENTER" style="-fx-pref-width: 330;" text="User Name" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userNameBtn" alignment="CENTER" prefHeight="40.0" prefWidth="330.0" style="-fx-border-color: blue;">
+               <VBox.margin>
+                  <Insets top="7.0" />
+               </VBox.margin></TextField>
+            <Label fx:id="passwordTxt" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="328.0" style="-fx-pref-width: 330;" text="Password" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <PasswordField fx:id="passwordtxt" alignment="CENTER" style="-fx-border-color: blue; -fx-pref-width: 330; -fx-pref-height: 40;" />
+            <Button fx:id="loginbtn" mnemonicParsing="false" onAction="#loginbtnAction" style="-fx-background-color: #4726da;" text="Log In" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="115.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="massage" textAlignment="CENTER" textFill="#ee0202">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
